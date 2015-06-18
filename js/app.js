@@ -25,9 +25,11 @@ app.controller('MyController', function($scope, $mdSidenav, $http) {
         $mdSidenav('left').toggle();
     };
 
+    //password not set
+    
     data = {
         username:  "dennis",
-        password: "h5XJj4Nn0MFc"
+        password: "[password]"
     }
 
     //password not set
