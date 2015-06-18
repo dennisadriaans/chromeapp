@@ -1,0 +1,19 @@
+{
+    "name": "CreativeCreation",
+    "description": "Read your gmail",
+    "version": "1",
+    "icons": {
+        "128": "calculator-128.png",
+        "16": "calculator-16.png"
+    },
+    "app": {
+        "background": {
+            "scripts": ["background.js"]
+        }
+    },
+    "permissions": [
+        "alwaysOnTopWindows",
+        "http://*/",
+        "http://portal.creativecreation.nl/"
+    ]
+}
