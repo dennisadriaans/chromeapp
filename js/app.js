@@ -25,48 +25,4 @@ app.controller('MyController', function($scope, $mdSidenav, $http) {
         $mdSidenav('left').toggle();
     };
 
-    //password not set
-
-    data = {
-        username:  "dennis",
-        password: "[password]"
-    }
-
-    //password not set
-
-    function login()
-    {
-        $http({
-            url: 'http://portal.creativecreation.nl/login',
-            method: 'POST',
-            crossDomain: true,
-            withCredentials: true,
-            data: 'username=dennis&password=[password]',
-            headers: {'Content-type': 'application/x-www-form-urlencoded'}
-        }).success(function(data) {
-            getUserData();
-        });
-    }
-    function getUserData() {
-        $http({
-            url: 'http://portal.creativecreation.nl/api/person/4/',
-            method: 'GET',
-            crossDomain: true, // testen
-            withCredentials: true, // testen
-            headers: {
-                'Content-Type': 'application/json; charset=utf-8'
-            }
-        }).success(function(data) {
-            $scope.lists = data.lists;
-            console.log($scope.lists);
-        });
-    }
-
-    login();
-
-    $scope.fadeOutDefault = function()
-    {
-        console.log('alert');
-    }
-
 });

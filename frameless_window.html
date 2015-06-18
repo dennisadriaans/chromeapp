@@ -2,8 +2,9 @@
     <head>
         <title>Frameless Window</title>
         <link rel="stylesheet" href="bower_components/angular-material/angular-material.min.css">
-        <link rel="stylesheet" type="text/css" href="css/main.css" />
+        <link rel="stylesheet" type="text/css" href="css/foundation.css" />
         <link rel="stylesheet" type="text/css" href="css/app.css" />
+        <link rel="stylesheet" type="text/css" href="css/main.css" />
 
     </head>
 
@@ -26,10 +27,27 @@
         </div>
     </div>
 
-    <md-button style="width: 100%; padding: 25px 0;">
-        Get
-    </md-button>
+    <div class="row">
+        <section class="card small-4 column">
+            <h1>Klanten</h1>
+            <p>Vandaag 4 klanten ingeplant</p>
 
+            <ul>
+                <li>
+                    <a href=""> <span>1</span> Rafael Adams <div class="right date-time"> 09:00 </div> </a>
+                    <a href=""> <span>2</span> Albert Simmons <div class="right date-time"> 11:30 </div> </a>
+                    <a href=""> <span>2</span> William Boyd <div class="right date-time"> 01:15 </div> </a>
+                </li>
+            </ul>
+        </section>
+
+        <md-button style="width: 100%; padding: 25px 0;">
+            Get
+        </md-button>
+    </div>
+
+
+    <!--
     <md-content id="content">
         <ul class="items">
             <li ng-repeat="item in lists">
@@ -39,6 +57,7 @@
                         <div class="md-list-item-text">
                             <h3><a ng-click="fadeOutDefault()" href="test">{{tasks.name | limitTo: 50}}...</a></h3>
                             <!-- <h3><a href="http://portal.creativecreation.nl/delud/persons/4/task/{{tasks.id}}" target="_blank">{{tasks.name | limitTo: 50}}...</a></h3> -->
+                            <!--
                             <h4>{{ item.what }}</h4>
                             <p>{{ item.notes }}</p>
                         </div>
@@ -48,6 +67,7 @@
             </li>
         </ul>
     </md-content>
+-->
 </div>
 
 <script src="bower_components/angular/angular.js"></script>
